@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# acdb2vcf-utf8 — форк оригинального проекта RuslanUC
+# Автор оригинала: RuslanUC (2025)
+# Исправление UTF-8 для Windows: @chuikoff (2026)
+# Лицензия: GPL-3.0
 import argparse
 
 import sqlite3
@@ -322,7 +326,7 @@ def main() -> None:
             print(vcard)
             print()
         else:
-            with open(args.vcf_path, "w" if contact is contacts[0] else "a") as f:
+            with open(args.vcf_path, "w" if contact is contacts[0] else "a", encoding="utf-8") as f:
                 f.write(vcard)
                 f.write("\n")
 

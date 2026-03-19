@@ -9,6 +9,8 @@
 - Полная поддержка UTF-8 (эмодзи 🐊, русские имена, WhatsApp и т.д.)
 - Работает на Python 3.11+ без ошибок `charmap codec`
 - Улучшенный русский README
+- Полная поддержка UTF-8 (эмодзи, русские имена)
+- Поддержка фото аватаров (BLOB → base64 PHOTO;TYPE=JPEG/PNG)
 
 ## Установка и использование
 
@@ -23,3 +25,5 @@ python3 acdb2vcf.py --list-accounts contacts2.db
 
 # 4. Конвертировать всё
 python3 acdb2vcf.py --all contacts2.db my_contacts.vcf
+
+
